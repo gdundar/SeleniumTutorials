@@ -17,7 +17,7 @@ public class TestBase {
     public void setup(){
         driver = Driver.getDriver();
         action = new Actions(driver);
-        driver.manage().timeouts().implicitlyWait(Long.valueOf(ConfigurationReader.getProperty("implicit wait")), TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Long.valueOf(ConfigurationReader.getProperty("implicitwait")), TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(ConfigurationReader.getProperty("url"));
     }
