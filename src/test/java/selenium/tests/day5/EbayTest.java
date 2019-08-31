@@ -1,6 +1,6 @@
 package selenium.tests.day5;
 
-import selenium.exercises.locators.BrowserFactory;
+import my_practices.exercises.locators.BrowserFactory;
 import selenium.utilities.SeleniumUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

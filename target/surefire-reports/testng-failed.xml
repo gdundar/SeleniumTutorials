@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="selenium.tests.day8_testng_intro.BeforeAndAfterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test1"/>
+          <include name="setUp"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- selenium.tests.day8_testng_intro.BeforeAndAfterTest -->
+      <class name="vyTrackApplication.components.login_Navigation.DailyRepeatTest">
+        <methods>
+          <include name="setup"/>
+          <include name="summary1"/>
+          <include name="teardown"/>
+          <include name="errorMessage3"/>
+          <include name="blankFields5"/>
+          <include name="functionality4"/>
+        </methods>
+      </class> <!-- vyTrackApplication.components.login_Navigation.DailyRepeatTest -->
+      <class name="vyTrackApplication.components.login_Navigation.PageAccessTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="salesManager"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- vyTrackApplication.components.login_Navigation.PageAccessTest -->
+      <class name="my_practices.exercises.locators.DepartmentTest">
+        <methods>
+          <include name="sortAlphabebtical"/>
+          <include name="tearDown"/>
+          <include name="setUpMethod"/>
+          <include name="mainDepartmentsTest"/>
+        </methods>
+      </class> <!-- my_practices.exercises.locators.DepartmentTest -->
+      <class name="vyTrackApplication.components.login_Navigation.LoginTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="dashboardVisible"/>
+          <include name="asdriver"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- vyTrackApplication.components.login_Navigation.LoginTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

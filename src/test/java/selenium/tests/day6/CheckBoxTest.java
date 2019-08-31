@@ -1,6 +1,6 @@
 package selenium.tests.day6;
 
-import selenium.exercises.locators.BrowserFactory;
+import my_practices.exercises.locators.BrowserFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

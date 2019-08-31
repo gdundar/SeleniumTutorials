@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Web Page Tests">
+    <parameter name="URL" value="https://developers.google.com"/>
+    <test name="Page Tests">
+        <classes>
+            <class name="my_practices.exercises.testNG.days.Day1"/>
+            <class name="my_practices.exercises.testNG.days.Day2"/>
+            <class name="my_practices.exercises.testNG.days.Day3">
+            <methods>
+                <exclude name="darkday"></exclude>
+            </methods>
+        </class>
+
+
+        </classes>
+    </test>
+
+</suite>

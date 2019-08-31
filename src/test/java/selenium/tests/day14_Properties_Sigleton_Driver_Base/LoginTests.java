@@ -1,9 +1,11 @@
 package selenium.tests.day14_Properties_Sigleton_Driver_Base;
 
 import org.testng.annotations.Test;
+import selenium.pages.vytrack.LoginPage;
 import selenium.utilities.ConfigurationReader;
+import selenium.utilities.TestBase;
 
-public class LoginTests extends TestBase{
+public class LoginTests extends TestBase {
     LoginPage loginPage = new LoginPage();
 
     @Test

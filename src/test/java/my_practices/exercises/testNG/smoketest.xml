@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Web Page Tests">
+    <listeners>
+        <listener class-name="my_practices.exercises.testNG.days.Listeners"/>
+    </listeners>
+
+    <test name="Page Tests">
+        <groups>
+            <run>
+                <include name="smoke"></include>
+                <exclude name="weakTest"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="my_practices.exercises.testNG.days.Day1"/>
+            <class name="my_practices.exercises.testNG.days.Day2"/>
+            <class name="my_practices.exercises.testNG.days.Day3">
+                <methods>
+                    <exclude name="darkday"></exclude>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+
+</suite>

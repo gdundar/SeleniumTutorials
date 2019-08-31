@@ -41,7 +41,7 @@ public class MultipleButtonsWithCSS {
     @Test
     public void button1Test(){
         driver.findElement(By.cssSelector(button1Locator)).click();
-        String expectedMessage = "Clicked on button one!";
+        String expectedMessage = "Clicked on button ConfigurationReader!";
         String actualMessage = driver.findElement(By.cssSelector(result)).getText();
         Assert.assertEquals(actualMessage, expectedMessage);
         //throw new SkipException("Skip the test);
