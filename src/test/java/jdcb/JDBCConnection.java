@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class JDBCConnection {
 
-    String oracledDUrl="jdbc:oracle:thin:@ec2-54-167-216-167.compute-1.amazonaws.com:1521:xe";
+    String oracledDUrl="jdbc:oracle:thin:@ec2-3-87-224-35.compute-1.amazonaws.com:1521:xe";
     String oracleDUserName="hr";
     String oracleDPassword="hr";
 
@@ -26,7 +26,9 @@ public class JDBCConnection {
 
         resultSet.beforeFirst(); // not to loose the first row!!!
         while(resultSet.next()) {
-            System.out.println(resultSet.getString(1) +" - " + resultSet.getString("Country_name") + " - " + resultSet.getString("region_id"));
+            System.out.println(resultSet.getString(1) +" - " +
+                    resultSet.getString("Country_name") + " - " +
+                    resultSet.getString("region_id"));
         }
 
         System.out.println(resultSet.getRow());
