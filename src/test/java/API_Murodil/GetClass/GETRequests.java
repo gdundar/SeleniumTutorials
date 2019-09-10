@@ -34,7 +34,7 @@ public class GETRequests {
 
     @Test
     public void negativeGet() {
-        Response response = when().get("url");
+        Response response = when().get("http://3.87.224.35:1000/ords/hr/employees/100");
         assertEquals(response.statusCode(), 404);
         response.prettyPrint();
     }
@@ -51,7 +51,7 @@ public class GETRequests {
 
     @Test
     public void verifyFirstName() throws URISyntaxException{
-        URI uri =new  URI("url");
+        URI uri =new  URI("http://3.87.224.35:1000/ords/hr/employees/100");
                 given().accept(ContentType.JSON)
                 .when().get(uri)
                 .then().assertThat().statusCode(200)

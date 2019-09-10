@@ -25,7 +25,7 @@ public class JsonPathAPI {
                 .and().assertThat().contentType(ContentType.JSON)
                 .and().assertThat().body("items.region_id", hasSize(4))
                 .and().assertThat().body("items.region_name", hasItem("Americas"))
-                .and().assertThat().body("items.region_name", hasItems("Americas", "Asia"))
+                .and().assertThat().body("items.region_name", hasItems("Europe", "Americas", "Asia", "Middle East", "Africa"))
                 .and().assertThat().body("items.region_name", contains("Americas"));
     }
 
