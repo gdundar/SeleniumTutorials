@@ -1,0 +1,95 @@
+    /*
+     Cucumber topics:
+            1. Scenario: a test case
+                Scenario Steps are written by 6 syntax of cucumber:
+                        When, Given, Then, And, But, *
+                        Ex:
+                            When go to URL      ==> @When
+                            and Click the button  ==>  @When
+                            Then something displays  ==> @Then
+                            * test completed        ==>  @Then
+
+            2. parameterizing: 'data'   or  "data"
+
+                    Ex:
+                        When go to web
+                        And Enter 'Apple'
+
+
+
+            3. Pipe line: | used for to give data tables (Excample Tables)
+                    we used them in Scenario OutLine and Scenario Templete
+
+            4. Background: runs before each scenario with in the featurefile
+                    it only applies to the specific feature files' scenarios
+
+                @Before: applies to all feature files
+
+
+            5. Scenario vs Scenario outline vs Scenario Templete
+                    Scenario : a single Test Case
+                    Scenario Outline: to test multiple data within a scenario, There has to examle tables
+                            '< >' , "< >"
+
+                    Scenario Templete: does the exact same thing with Scenario outline
+                            (larger)
+
+            6. runner class:
+                    @RunWith: junit
+
+                    @CucumberOptions: cucumber
+                            feature: define the path of the feature files
+                            glue: define the path of cucumber annotions
+                                        (@when, @Then, @Given, @Before, @After)
+                                any class that contains cucumber annotations, cannot be extended, that's why we use glue
+
+                            tags: define which feature files or scenarios to run
+                                    tags can be shared
+
+                            dryrun:
+                                false: it runs the step definitions, then runs the
+                                feature files and if there is any unimplemented steps,
+                                it will give us in the output
+
+                                true: only runs feature files, then if there is
+                                any unimplemented steps, it will give us in
+                                the output
+
+
+                            plugin: generate cucumber reports
+
+
+            7. cucumber annotations:
+                    @When : scenario steps
+                    @Gievn: scenario steps
+                    @Then: scenario steps
+
+                    @Before: runs before each scenario' execution (entire feature files)
+                    @After:  runs after each scenario' execution (entire feature)
+
+                If any class contains any of those annotation The class cannot be extended
+                    Ex: if we extend our hooks class or step definition class, it will give errors during runtime
+
+
+     @BeforeGroup,
+     @BeforeSuite
+     @BeforeTest
+
+
+     @Test(groupName ="groupname"  suitName = "Suitname",  name="testname")
+
+      first we need to do grouping in XML file, then we can use @Beforegroup, @BeforeTest, @BeforeSuqit
+
+
+
+    ignoreTest:
+     @Test(enable = false)
+
+     @Test() @Ignore
+
+
+
+
+
+     */
+}

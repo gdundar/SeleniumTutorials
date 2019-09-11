@@ -1,0 +1,90 @@
+Selenium Grid - is a tool that allows to perform remote execution on different platforms, operation systems, browser, versions..
+Grid consists of 2 main components:
+Hub and Node
+We should have one hub and 1+ node.
+Hub will be point of contact for RemoteWebDriver. But, it doesn't run tests itself. Tests will be running on nodes. Based on DesiredCapabilities, hub will select node for running your tests.
+1. Download Selenium Standalone Server:
+https://seleniumhq.org/download/
+2. Download webdrivers. that you want to use
+3. Execute in terminal:
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+To start hub.
+17:37:29.822 INFO [Hub.start] - Selenium Grid hub is up and running
+17:37:29.831 INFO [Hub.start] - Nodes should register to http://192.168.2.118:4444/grid/register/
+17:37:29.832 INFO [Hub.start] - Clients should connect to http://192.168.2.118:4444/wd/hub
+http://192.168.2.118:4444/grid/register/ - address based on which you can pair node with hub.
+If you are running hub and node in the computer, you can use localhost instead of IP.
+http://192.168.2.118:4444/wd/hub - This URL you will specify in RemoteWebdriver (in Driver class)
+FOR NODE CONFIGURATION:
+java -Dwebdriver.chrome.driver="chrome" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register
+OR
+java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register
+For windows: chrome.exe
+If it's not the machine, put IP or DNS instead of localhost.
+You need java, you need browsers to make it happened.
+Then add to your driver class:
+ case "remotechrome":
+                    DesiredCapabilities capabilities = new DesiredCapabilities().chrome();
+                    capabilities.setPlatform(Platform.ANY);
+                    try {
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+#################################################################
+Open terminal, and navigate to the folder with selenium-standalone-server
+Execute, to start hub:
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+Execute, to start node:
+java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register
+Connect, in the driver class to the hub:
+driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+Repeat these steps on the EC2, and change localhost, in the driver class for remotechrome case,
+localhost on IP of the ec2.
+In addition, if you want to change configuration, use json file.
+Configuring the nodes by JSON
+java -jar selenium-server-standalone.jar -role node -nodeConfig nodeconfig.json
+{
+  "capabilities":
+  [
+    {
+      "browserName": "firefox",
+      "marionette": false,
+      "maxInstances": 5,
+      "seleniumProtocol": "WebDriver"
+    },
+    {
+      "browserName": "chrome",
+      "maxInstances": 20,
+      "seleniumProtocol": "WebDriver"
+    },
+    {
+      "browserName": "internet explorer",
+      "platform": "WINDOWS",
+      "maxInstances": 1,
+      "seleniumProtocol": "WebDriver"
+    },
+    {
+      "browserName": "safari",
+      "technologyPreview": false,
+      "platform": "MAC",
+      "maxInstances": 1,
+      "seleniumProtocol": "WebDriver"
+    }
+  ],
+  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+  "maxSession": 20,
+  "port": 5555,
+  "register": true,
+  "registerCycle": 5000,
+  "hub": "http://localhost:4444",
+  "nodeStatusCheckTimeout": 5000,
+  "nodePolling": 5000,
+  "role": "node",
+  "unregisterIfStillDownAfter": 60000,
+  "downPollingLimit": 2,
+  "debug": false,
+  "servlets" : [],
+  "withoutServlets": [],
+  "custom": {}
+}
