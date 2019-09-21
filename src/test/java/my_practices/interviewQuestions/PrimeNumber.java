@@ -22,7 +22,7 @@ public class PrimeNumber {
             if(isPrimeNumber(i))
                 System.out.print(i + " ");
         }
-
+        System.out.println();
     }
     public static void main(String[] args) {
 
@@ -34,5 +34,7 @@ public class PrimeNumber {
         System.out.println(isPrimeNumber(-7));
 
         getPrimeNumbers(19);
+        getPrimeNumbers(9);
+        getPrimeNumbers(10);
     }
 }
