@@ -8,7 +8,7 @@ public class RemovingCharacters {
         System.out.println(s);
 
         String str = "Hello Spartan 123";
-        str = str.replace("[^0-9]", "");
+        str = str.replaceAll("[^0-9]", "");
         System.out.println(str);
     }
 }

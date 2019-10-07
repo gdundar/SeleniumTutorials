@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cda27ba1-7767-422d-a3ca-bcc18353fbcb" name="Default Changelist" comment="These are my first projects for selenium automation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/apiUdemy/GetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apiUdemy/GoogleAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apiUdemy/env.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/Lambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/OrderAnArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/visionCmp/Palindrome_WisionWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/visionCmp/RevNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/ArmstrongNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/ArmstrongNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/FibonacciSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/FibonacciSeries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/PrimeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/ArmstrongNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/ArmstrongNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/FibonacciSeries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/FibonacciSeries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/FindDuplicateElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/FindDuplicateElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/FindMissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/FindMissingNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/LargestSmallestNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/LargestSmallestNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/RemovingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my_practices/interviewQuestions/RemovingCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/FindDuplicateElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/FindDuplicateElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/FindMissingNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/FindMissingNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/LargestSmallestNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/LargestSmallestNumbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/RemovingCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/my_practices/interviewQuestions/RemovingCharacters.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +63,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="vyTrackApplication.components.login_Navigation" />
+      <recent name="Selenium" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/excelAutomation/resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="API_Murodil.beans" />
     </key>
@@ -69,16 +81,6 @@
       <recent name="$PROJECT_DIR$/src/test/java/excel_data_driven" />
       <recent name="$PROJECT_DIR$/src/test/java/excelAutomation/resources" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="java" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="vyTrackApplication.components.login_Navigation" />
-      <recent name="Selenium" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/excelAutomation/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,20 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PrimeNumber">
-    <configuration name="ArmstrongNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my_practices.interviewQuestions.ArmstrongNumber" />
-      <module name="SeleniumTutorials" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="my_practices.interviewQuestions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.StringManipulation">
     <configuration name="FibonacciSeries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my_practices.interviewQuestions.FibonacciSeries" />
       <module name="SeleniumTutorials" />
@@ -120,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my_practices.interviewQuestions.Lambda" />
+    <configuration name="FindDuplicateElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my_practices.interviewQuestions.FindDuplicateElement" />
       <module name="SeleniumTutorials" />
       <extension name="coverage">
         <pattern>
@@ -133,8 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my_practices.interviewQuestions.PrimeNumber" />
+    <configuration name="OrderAnArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my_practices.interviewQuestions.OrderAnArray" />
       <module name="SeleniumTutorials" />
       <extension name="coverage">
         <pattern>
@@ -146,30 +135,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuperLotto" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SquareSumOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my_practices.interviewQuestions.SquareSumOfArray" />
       <module name="SeleniumTutorials" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my_practices.exercises.seleniumExercises.*" />
+          <option name="PATTERN" value="my_practices.interviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="my_practices.exercises.seleniumExercises" />
-      <option name="MAIN_CLASS_NAME" value="my_practices.exercises.seleniumExercises.SuperLotto" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringManipulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my_practices.interviewQuestions.StringManipulation" />
+      <module name="SeleniumTutorials" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my_practices.interviewQuestions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrimeNumber" />
-        <item itemvalue="Application.Lambda" />
+        <item itemvalue="Application.StringManipulation" />
+        <item itemvalue="Application.SquareSumOfArray" />
+        <item itemvalue="Application.FindDuplicateElement" />
+        <item itemvalue="Application.OrderAnArray" />
         <item itemvalue="Application.FibonacciSeries" />
-        <item itemvalue="Application.ArmstrongNumber" />
-        <item itemvalue="TestNG.SuperLotto" />
       </list>
     </recent_temporary>
   </component>

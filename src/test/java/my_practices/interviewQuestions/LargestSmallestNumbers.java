@@ -36,6 +36,23 @@ public class LargestSmallestNumbers {
         }
         System.out.println(smallest);
 
+
+
+        //Sorting an array
+        int temp;
+        for(int k=1; k < numbers.length; k++){
+            for(int m = k; m > 0; m--){
+                if(numbers[m] < numbers[m-1]){
+                    temp = numbers[m];
+                    numbers[m] = numbers[m-1];
+                    numbers[m-1] = temp;
+                }
+            }
+        }
+        for(int h =0; h < numbers.length; h++){
+            System.out.println("The numbers are: " + numbers[h]);
+        }
+
     }
 
 
